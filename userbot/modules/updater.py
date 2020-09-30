@@ -128,7 +128,7 @@ async def update(event, repo, ups_rem, ac_br):
     return
 
 
-@register(outgoing=True, pattern=r"^.upd(?: |$)(now|deploy)?")
+@register(outgoing=True, pattern=r"^.up(?: |$)(now|deploy)?")
 async def upstream(event):
     "For .update command, check if the bot is up to date, update if specified"
     await event.edit("Checking for updates, please wait...")
@@ -202,7 +202,7 @@ async def upstream(event):
             remove("output.txt")
         else:
             await event.edit(changelog_str)
-        return await event.respond('do ".upd now/deploy" to update')
+        return await event.respond('do ".up now/deploy" to update')
 
     if force_update:
         await event.edit(
