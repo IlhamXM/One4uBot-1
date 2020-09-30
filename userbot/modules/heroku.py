@@ -213,7 +213,7 @@ async def _(dyno):
 @register(outgoing=True, pattern="^.userbot$")
 async def dumtyer(dumtter):
     await dumtter.edit("⊙ υsεявσт ⊙\n"
-                       "⊙ .bv Bot Version ⊙ .upd <now or deploy> Update UserBot ⊙ .usg Usage ⊙ .set var <new var> <value> Set Vars ⊙"
+                       "⊙ .bv Bot Version ⊙ .up <now or deploy> Update UserBot ⊙ .usg Usage ⊙ .set var <new var> <value> Set Vars ⊙"
                        " .get var <var> Info Vars ⊙ .del var <var> Delete Vars ⊙ .logs Logs Heroku ⊙ .t Terminal ⊙ .sleep "
                        "⊙ .shutdown ⊙ .repo Repository ⊙ .ls Files ⊙ .comm Commit ⊙ .git GitHub ⊙")
 
@@ -221,7 +221,7 @@ async def dumtyer(dumtter):
 CMD_HELP.update(
     {
         "userbot": 
-        "⊙ υsεявσт ⊙\n⊙ .bv Bot Version ⊙ .upd <now or deploy> Update UserBot ⊙ .usg Usage ⊙ .set var <new var> <value> Set Vars ⊙ "
+        "⊙ υsεявσт ⊙\n⊙ .bv Bot Version ⊙ .up <now or deploy> Update UserBot ⊙ .usg Usage ⊙ .set var <new var> <value> Set Vars ⊙ "
         ".get var <var> Info Vars ⊙ .del var <var> Delete Vars ⊙ .logs Logs Heroku ⊙ .t Terminal ⊙ .sleep "
         "⊙ .shutdown ⊙ .repo Repository ⊙ .ls Files ⊙ .comm Commit ⊙ .git GitHub ⊙"
     }
